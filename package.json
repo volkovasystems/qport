@@ -1,0 +1,37 @@
+{
+	"name": "qport",
+	"version": "0.0.0",
+	"description": "Query usable port.",
+	"main": "qport.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"reset": "rsetmod clean",
+		"clear": "rsetmod clean --clear",
+		"formal": "jesy apply '*.json'",
+		"test": "mocha qport-test.js",
+		"deploy": "npm run pristine && npm run test && npm run formal"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/qport.git"
+	},
+	"keywords": [
+		"query",
+		"usable",
+		"port",
+		"qport"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/qport/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/qport#readme",
+	"dependencies": {
+		"depher": "^0.38.0",
+		"numric": "^0.19.0",
+		"raze": "^0.34.0",
+		"rport": "^0.1.0",
+		"zelf": "^0.14.0"
+	}
+}
